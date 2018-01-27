@@ -25,6 +25,14 @@ public class Arrow : MonoBehaviour
 	{
 		myAudioSource.Play();
 		myAudioSource.pitch += 0.05f;
+
+		if (collision.collider.CompareTag("Finish"))
+		{
+			GUIEventManager.InvokeEvent(2);
+			StartCoroutine(DestroyAfterAudio());
+			return;
+		}
+
 		if (collision.collider.CompareTag("Reflect"))
 			remainingBounces--;
 		else

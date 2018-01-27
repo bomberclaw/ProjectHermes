@@ -10,6 +10,9 @@ public class ObjectShooter : MonoBehaviour
 	public  Transform           spawnPoint;
 	private TrajectoryPredictor myPredictor;
 	private bool                canShoot;
+	public  SpriteRenderer      myRenderer;
+	public  Sprite              spriteWhileFiring;
+	public  Sprite              spriteWhileWaiting;
 
 	private void Awake()
 	{
@@ -23,6 +26,7 @@ public class ObjectShooter : MonoBehaviour
 		if (canShoot && Input.GetKeyDown(KeyCode.Mouse0))
 		{
 			canShoot = false;
+			myRenderer.sprite = spriteWhileWaiting;
 			Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
 			myPredictor.Toggle(canShoot);
 		}
@@ -33,6 +37,7 @@ public class ObjectShooter : MonoBehaviour
 		if (resumeAiming)
 		{
 			instance.canShoot = true;
+			instance.myRenderer.sprite = instance.spriteWhileFiring;
 			instance.myPredictor.Toggle(instance.canShoot);
 		}
 	}
