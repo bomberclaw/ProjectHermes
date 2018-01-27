@@ -24,7 +24,8 @@ public class Arrow : MonoBehaviour
 		if (remainingBounces <= 0)
 			Destroy(this.gameObject);
 		else
-			transform.LookAt(transform.position + (Vector3)myRigidbody.velocity);
+			transform.LookAt(transform.position + (Vector3)myRigidbody.velocity, Vector3.back);
+		transform.rotation.eulerAngles *= new Vector3(1, 0, 1);
 //		auxRotation = transform.rotation.eulerAngles;
 //		auxRotation.x = Vector2.Angle(Vector2.right, myRigidbody.velocity);
 //		transform.rotation = Quaternion.Euler(auxRotation);
