@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4177073766318960}
   - component: {fileID: 198551733713218794}
   - component: {fileID: 199538115638214468}
+  - component: {fileID: 114666211565767190}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -38,8 +39,9 @@ GameObject:
   - component: {fileID: 4519691633944050}
   - component: {fileID: 198012368169462912}
   - component: {fileID: 199713028024717842}
+  - component: {fileID: 114152332050338616}
   m_Layer: 0
-  m_Name: Impact_Particle
+  m_Name: Impact_Particle_Shansho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,6 +74,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114152332050338616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1477544370201072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: face34e9e171cd941a551162a2df5cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114666211565767190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1020401460613714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: face34e9e171cd941a551162a2df5cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198012368169462912
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -79,9 +103,9 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1477544370201072}
   serializedVersion: 5
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
-  looping: 0
+  looping: 1
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -221,7 +245,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.8834967, g: 1, b: 0.77205884, a: 1}
+      maxColor: {r: 0.9044118, g: 0.6398759, b: 0.5320069, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
