@@ -11,9 +11,11 @@ public class Arrow : MonoBehaviour
 	private int         maxBounces;
 	private AudioSource myAudioSource;
 	private SpriteRenderer mySprite;
+	private Collider2D  myCollider;
 
 	private void Start()
 	{
+		myCollider = GetComponent<Collider2D>();
 		myRigidbody = GetComponent<Rigidbody2D>();
 		myRigidbody.velocity = transform.forward * force;
 		myAudioSource = GetComponent<AudioSource>();
@@ -57,6 +59,7 @@ public class Arrow : MonoBehaviour
 
 	private IEnumerator DestroyAfterAudio()
 	{
+		myCollider.enabled = false;
 		enabled = false;
 		mySprite.enabled = false;
 		yield return new WaitWhile(audioIsPlaying);

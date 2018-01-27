@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4432629461712926}
   - component: {fileID: 212701570639614988}
-  - component: {fileID: 60097458846884200}
   - component: {fileID: 114011321686372480}
   - component: {fileID: 114651689802604900}
+  - component: {fileID: 60606465631746946}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Reflect
@@ -43,7 +43,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &60097458846884200
+--- !u!60 &60606465631746946
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -67,19 +67,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 12.689453, y: -51.438347}
-      - {x: 40.855347, y: -50.323437}
-      - {x: 51.438354, y: -42.719173}
-      - {x: 54.531982, y: -20.727562}
-      - {x: 50.37445, y: -7.340248}
-      - {x: 36.21692, y: 7.3789215}
-      - {x: 17.706299, y: 22.732086}
-      - {x: -19.783081, y: 17.114899}
-      - {x: -34.15753, y: 1.208519}
-      - {x: -45.53192, y: -8.676559}
-      - {x: -46.74048, y: -20.531952}
-      - {x: -44.927673, y: -35.34473}
-      - {x: -33.11487, y: -49.34473}
+    - - {x: 42, y: -64}
+      - {x: 59, y: -58}
+      - {x: 64, y: -49}
+      - {x: 61, y: -37}
+      - {x: 65, y: -22}
+      - {x: 65, y: 3}
+      - {x: 46, y: 22}
+      - {x: 42, y: 45}
+      - {x: 31, y: 59}
+      - {x: 9, y: 66}
+      - {x: -13, y: 66}
+      - {x: -35, y: 43}
+      - {x: -47, y: 22}
+      - {x: -47, y: 8}
+      - {x: -56, y: -1}
+      - {x: -60, y: -31}
+      - {x: -54, y: -50}
+      - {x: -38, y: -64}
+      - {x: 6.1642456, y: -59.647816}
 --- !u!114 &114011321686372480
 MonoBehaviour:
   m_ObjectHideFlags: 1
