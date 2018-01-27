@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaker: {fileID: 114909057054170180}
-  particle: {fileID: 1477544370201072, guid: 7ca1f9f314e0c4347ac0611d40998123, type: 2}
+  particle: {fileID: 1708619778991998, guid: 826a68b57b6887044bac1aa50aa9174d, type: 2}
 --- !u!114 &114572977145419418
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionOffset: {x: 1, y: 0}
+  pause: 0
   rotation: 5
   delay: 0.87
 --- !u!114 &114778784943638296
@@ -217,6 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionOffset: {x: 1, y: 0}
+  pause: 0
   rotation: 5
   delay: 0.66
 --- !u!114 &114909057054170180
