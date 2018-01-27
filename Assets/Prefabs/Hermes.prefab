@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d990f4b5aca10146bb1e0555f6da328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
 --- !u!114 &114408720401969870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f8aae75312320408c12db661f6269e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootingPoint: {fileID: 0}
   hitLayers:
     serializedVersion: 2
     m_Bits: 0
