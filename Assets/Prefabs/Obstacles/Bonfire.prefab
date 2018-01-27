@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 114413424099041514}
   - component: {fileID: 114909057054170180}
   m_Layer: 0
-  m_Name: Fogata
+  m_Name: Bonfire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

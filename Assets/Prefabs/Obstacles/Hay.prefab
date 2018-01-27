@@ -20,11 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4238683878095032}
   - component: {fileID: 212777841631134314}
-  - component: {fileID: 60856401303929506}
   - component: {fileID: 114136927915679050}
   - component: {fileID: 114652378989696632}
+  - component: {fileID: 60674365772569924}
   m_Layer: 0
-  m_Name: Heno
+  m_Name: Hay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &60856401303929506
+--- !u!60 &60674365772569924
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -67,16 +67,21 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 42.531494, y: -42.0799}
-      - {x: 34.53195, y: -27.791483}
-      - {x: 18.021301, y: -22.56166}
-      - {x: -9.2595215, y: -23.842485}
-      - {x: -22.676575, y: -28.842485}
-      - {x: -32.208527, y: -41.74888}
-      - {x: -23.37445, y: -56.051}
-      - {x: -9.2595215, y: -63.842484}
-      - {x: 19.442017, y: -67.232475}
-      - {x: 38.957397, y: -53.957405}
+    - - {x: 46, y: -25.5}
+      - {x: 63, y: 2.5}
+      - {x: 68.20499, y: 31.959553}
+      - {x: 65, y: 60.5}
+      - {x: 31, y: 83.5}
+      - {x: -16, y: 84.5}
+      - {x: -55, y: 63.5}
+      - {x: -61, y: 21.5}
+      - {x: -39, y: -24.5}
+      - {x: -42, y: -44.5}
+      - {x: -38, y: -63.5}
+      - {x: -10, y: -80.5}
+      - {x: 21, y: -80.5}
+      - {x: 49, y: -65.5}
+      - {x: 54, y: -41.5}
 --- !u!114 &114136927915679050
 MonoBehaviour:
   m_ObjectHideFlags: 1
