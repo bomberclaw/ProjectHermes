@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 199713028024717842}
   - component: {fileID: 114487438856329954}
   m_Layer: 0
-  m_Name: Impact_Particle
+  m_Name: Impact_Particle_Greem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

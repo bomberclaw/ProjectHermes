@@ -14,6 +14,9 @@ public class PingPongMover : MonoBehaviour
 	private Vector3 goalPosition;
 	private Transform myTransform;
 
+
+    public RandomMovement randomMovement;
+
 	private void Start()
 	{
 		myTransform = transform;
@@ -38,9 +41,14 @@ public class PingPongMover : MonoBehaviour
 			movementVector = -movementVector;
 
 			counter = 0;
-			yield return new WaitForSeconds(delayOnGoal);
-
-			goalPosition = myTransform.localScale;
+            if (randomMovement != null) { 
+            randomMovement.pause = true;
+            }
+            yield return new WaitForSeconds(delayOnGoal);
+            if (randomMovement != null) { 
+            randomMovement.pause = false;
+            }
+            goalPosition = myTransform.localScale;
 			goalPosition.x = -goalPosition.x;
 			myTransform.localScale = goalPosition;
 		}
