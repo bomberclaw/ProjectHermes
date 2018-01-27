@@ -94,7 +94,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1198695131817248}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -868, y: -469, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4491253943298674}
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d990f4b5aca10146bb1e0555f6da328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
+  spawnPoint: {fileID: 4247520398026352}
 --- !u!114 &114408720401969870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f8aae75312320408c12db661f6269e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingPoint: {fileID: 0}
+  shootingPoint: {fileID: 4247520398026352}
   hitLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -143,6 +143,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1663164267698926, guid: 77070fe3ceaa2914dbc88339475d2777, type: 2}
   spawnPoint: {fileID: 4247520398026352}
+  myRenderer: {fileID: 212157783081138730}
+  spriteWhileFiring: {fileID: 21300000, guid: 6ae137f09b2f1874a968031e2764681d, type: 3}
+  spriteWhileWaiting: {fileID: 21300000, guid: 8ac4876a8f2a9544d87031b82688e8f0, type: 3}
 --- !u!120 &120200268624427080
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -156,7 +159,7 @@ LineRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 4f3e1e22cb4e8b44ebc0ee86d364b596, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -172,8 +175,8 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2080310177
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
@@ -184,7 +187,7 @@ LineRenderer:
   - {x: 20, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 10
+    widthMultiplier: 4
     widthCurve:
       serializedVersion: 2
       m_Curve:
