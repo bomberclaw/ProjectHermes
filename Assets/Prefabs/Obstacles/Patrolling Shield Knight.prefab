@@ -175,6 +175,7 @@ MonoBehaviour:
   durationOffset: 0
   movementVector: {x: 1, y: 0, z: 0}
   delayOnGoal: 6
+  randomMovement: {fileID: 0}
 --- !u!114 &114898221520590708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -200,7 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaker: {fileID: 114898221520590708}
-  particle: {fileID: 1477544370201072, guid: 7ca1f9f314e0c4347ac0611d40998123, type: 2}
+  particle: {fileID: 1477544370201072, guid: 44928a3f2d3902348bf7ba3907fea8dc, type: 2}
 --- !u!114 &114929045332914596
 MonoBehaviour:
   m_ObjectHideFlags: 1
