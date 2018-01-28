@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ObjectShooter : MonoBehaviour
 {
 	static private ObjectShooter instance;
+
+	static public Action<int>   onAvailableArrowsChange;
 
 	public  GameObject          prefab;
 	public  Transform           spawnPoint;
@@ -27,6 +30,10 @@ public class ObjectShooter : MonoBehaviour
 		if (canShoot && Input.GetKeyDown(KeyCode.Mouse0))
 		{
 			availableArrows--;
+			if (onAvailableArrowsChange != null)
+			{
+				onAvailableArrowsChange(availableArrows);
+			}
 			canShoot = false;
 			myRenderer.sprite = spriteWhileWaiting;
 			Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
