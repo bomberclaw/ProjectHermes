@@ -18,7 +18,8 @@ public class GUIEventManager : MonoBehaviour
 	{
 		if (instance == null)
 			return;
-		
-		instance.myAnimator.SetInteger(instance.eventFlagName, eventFlag);
+
+		if (instance.myAnimator.GetInteger(instance.eventFlagName) == 0)
+			instance.myAnimator.SetInteger(instance.eventFlagName, eventFlag);
 	}
 }
