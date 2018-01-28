@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaker: {fileID: 114559277630266598}
-  particle: {fileID: 1477544370201072, guid: 44928a3f2d3902348bf7ba3907fea8dc, type: 2}
+  particle: {fileID: 1477544370201072, guid: d97476801043a0a4d8799568ea904aaf, type: 2}
 --- !u!212 &212806691100218514
 SpriteRenderer:
   m_ObjectHideFlags: 1

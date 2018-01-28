@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaker: {fileID: 114876132059815224}
-  particle: {fileID: 1477544370201072, guid: 7ca1f9f314e0c4347ac0611d40998123, type: 2}
+  particle: {fileID: 1477544370201072, guid: d9ad870f5e049d543bcb0e433496c32d, type: 2}
 --- !u!114 &114876132059815224
 MonoBehaviour:
   m_ObjectHideFlags: 1
