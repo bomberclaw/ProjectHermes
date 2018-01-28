@@ -12,6 +12,11 @@ public class ReserveArrowDisplayer : MonoBehaviour
 		ObjectShooter.onAvailableArrowsChange += UpdateRemainingArrows;
 	}
 
+	private void OnDestroy()
+	{
+		ObjectShooter.onAvailableArrowsChange -= UpdateRemainingArrows;
+	}
+
 	private void UpdateRemainingArrows(int amount)
 	{
 		if (amount > sprites.Length)
